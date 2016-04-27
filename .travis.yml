@@ -16,7 +16,7 @@ install:
 - cp -r $TRAVIS_BUILD_DIR/test_sites/test_site ~/frappe-bench/sites/
 script:
 - cd ~/frappe-bench
-- bench get-app erpnext $TRAVIS_BUILD_DIR
+- bench get-app erpnext https://github.com/frappe/erpnext
 - bench get-app smurps https://github.com/lowks/smurps
 - bench use test_site
 - bench reinstall
