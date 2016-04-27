@@ -19,10 +19,10 @@ script:
 - bench get-app erpnext https://github.com/frappe/erpnext
 - bench get-app smurps https://github.com/lowks/smurps
 - bench use test_site
-- bench --site test_site install-app smurps
 - bench reinstall
 - bench build
 - bench build-website
+- bench --site test_site install-app smurps
 - bench start &
 - sleep 10
 - bench --verbose run-tests --app smurps
