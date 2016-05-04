@@ -7,12 +7,12 @@ app_publisher = "Strella Consulting Sdn Bhd"
 app_description = "SMURPS"
 app_icon = "octicon octicon-person"
 app_color = "#2C82C9"
-app_email = "smurps@strellagroup.com"
+app_email = "smrps@strellagroup.com"
 app_version = "0.0.1"
 app_license = "MIT"
 
 # Strella - Add Custom Fields
-fixtures = ["Custom Field"]
+fixtures = ["Custom Field", "Custom Script"]
 
 # Includes in <head>
 # ------------------
