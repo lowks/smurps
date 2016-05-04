@@ -1,0 +1,11 @@
+[
+ {
+  "docstatus": 0, 
+  "doctype": "Custom Script", 
+  "dt": "Issue", 
+  "modified": "2016-04-30 14:18:29.788583", 
+  "name": "Issue-Client", 
+  "script": "frappe.ui.form.on(\"Issue\", \"after_save\", function(frm) {\n    //Save the Issue if it is unsaved\n    function preSave() {\n       if (cur_frm.doc.__unsaved == 1) {\n          cur_frm.save();\n        return;\n      }\n }\n \n preSave();\n    \n    frappe.call({\n           \"method\": 'smurps.custom_issue.get_custom_issue',\n            args: {\n              \"issue\": cur_frm.doc.name\n            },\n            callback: function(r) {\n            }\n     });\n});", 
+  "script_type": "Client"
+ }
+]

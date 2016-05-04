@@ -10,7 +10,7 @@ setup(
 	version=version,
 	description='SMURPS',
 	author='Strella Consulting Sdn Bhd',
-	author_email='smurps@strellagroup.com',
+	author_email='smrps@strellagroup.com',
 	packages=find_packages(),
 	zip_safe=False,
 	include_package_data=True,

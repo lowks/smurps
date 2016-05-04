@@ -1,4 +1,3 @@
-import ipdb; ipdb.set_trace()
 import frappe
 from unittest import TestCase
 from mock import Mock, patch, call
